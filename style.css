@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --cor0: black;
+    --cor1: white;
+
+    --fonte-padrao: Verdana, Helvetica, sans-serif;
+    --fonte-titulo: 'Passion One', 'cursive';
+    --fonte-texto-cordel: 'Sriracha', 'cursive';
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor0);
+
+}
+
+header h1 {
+    padding-top: 60px;
+
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
+
+    text-align: center;
+
+    color: var(--cor1);
+
+/* 'font-variant' são variações da fonte. small-caps as primeiras letras ficam maiores e todas são maiuscula */
+
+    font-variant: small-caps;
+}
+
+header p {
+    padding-bottom: 60px;
+
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+
+    text-align: center;
+
+    color: var(--cor1);
+}
+
+header a {
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: var(--cor1);
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+ 
+
+/* (line-height) espaçamento das linhas */
+    line-height: 7vw;
+
+}
+
+.texto {
+    padding: 40px;
+
+    font-family: var(--fonte-texto-cordel);
+    font-size: 3vw;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
+}
+
+.texto p {
+    padding-bottom: 2em;
+}
+
+section#imagem01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+/*Efeito paralax. use o attachment fixed */
+    background-attachment: fixed;
+
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.644);
+
+}
+
+section#imagem01 p {
+    display: inline-block;
+
+    padding: 30px;
+    margin: 0px 20px;
+
+    background-color: rgba(0, 0, 0, 0.596);
+
+    font-family: var(--fonte-texto-cordel);
+    font-size: 3vw;
+
+    text-shadow: 2px 2px 2px black;
+
+    color: var(--cor1);
+}
+
+section#imagem02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: left center;
+    background-size: cover;
+
+/*Efeito paralax. use o attachment fixed */
+    background-attachment: fixed;
+
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.719);
+}
+
+section#imagem02 p {
+    display: inline-block;
+
+    padding: 30px;
+    margin: 0px 20px;
+
+    background-color: rgba(0, 0, 0, 0.603);
+
+    font-family: var(--fonte-texto-cordel);
+    font-size: 3vw;
+
+    text-shadow: 2px 2px 1px black;
+
+    color: var(--cor1);
+}
+
+footer {
+    padding: 5px;
+
+    background-color: var(--cor0);
+
+    font-family: var(--fonte-padrao);
+    font-size: 0.9em;
+
+    text-align: center;
+
+    color: white;
+}
